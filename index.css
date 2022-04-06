@@ -1,0 +1,268 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 56px auto;
+  background-color: #E6ECF0;
+  max-width: 1190px;
+
+}
+
+.skip_links{
+  margin:0px;
+  padding:0px;
+  display:none;
+}
+
+header{
+  background-color:white;
+  position:fixed;
+  top: 0; 
+  left: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.logo_block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position:absolute;
+  left: 50%;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation_item{
+  color:#7f7f7f;
+  font-weight: bold; 
+  margin: 10px;
+  margin-right:10px;
+}
+
+.navigation_item:hover{
+  color:#4AB3F4;
+}
+
+.nav_item_text:hover{
+  text-decoration: underline;
+}
+
+.nav_item_icon {
+  width: 100%;
+}
+
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 25px;
+}
+
+.tweet_button_block{
+  padding: 2px;
+  right: 0px;
+  position: absolute;
+  margin: auto 30px;
+
+}
+
+.tweet_button {
+  background-color:#4AB3F4;
+  color:white;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  min-width: 80px;
+}
+
+.main_chunk {
+  display: grid;
+  grid-template-columns: 290px auto 290px;
+}
+
+/*LEFT STYLING*/
+.left_content {
+  margin-top: 20px;
+  margin-left:20px;
+}
+
+.cover_photo_block{
+  background-color:black;
+  padding:40px 20px 50px 20px;
+  text-align: center;
+  height: 100px;
+}
+
+.cover_photo_pic{
+  width: 150px;
+}
+
+.user_profile_main{
+  background-color:white;
+}
+
+.user_profile_block{
+  height: 50px;
+  display: flex;
+}
+
+.user_profile_pic{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 2px solid white;
+  position:relative;
+  top:-55px;
+}
+
+.user_profile_info{
+  background-color:white;
+}
+
+.user_profile_name{
+  margin-right: 5px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.user_profile_username{
+  color:#7f7f7f;
+  margin-right: 5px;
+}
+
+.profile_stats{
+  display:flex;
+  margin:5px;
+  
+}
+
+.profile_stats_block{
+  margin: 10px;
+}
+
+.stats_name {
+  color:#7f7f7f;
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
+
+.stats_num {
+  color: #4AB3F4;
+  font-weight: bold;
+  margin-top:10px;
+}
+
+
+/*CENTER STYLING*/
+  .center_content {
+    background-color:white;
+    margin: 20px;
+  }
+
+  .tweet_block {
+    border-bottom:1px solid #E6ECF0;
+    min-height: 51px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .tweet_profilepic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 0px 10px;
+  }
+
+  .tweet_info{
+    display:flex;
+  }
+
+  .tweet_name {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .tweet_username{
+    color:#7f7f7f;
+    margin-right: 5px;
+  }
+
+  .tweet_time{
+    color:#7f7f7f;
+    margin-right: 5px;
+  }
+
+
+/*RIGHT CONTENT*/
+.right_content {
+  margin-top: 20px;
+}
+
+.follow_block {
+  background-color:white;
+  border-bottom:1px solid #E6ECF0;
+  display: flex;
+}
+
+.follow_profile_pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.follow_info {
+  display: flex;
+
+}
+
+.follow_name {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.follow_username {
+  color:#7f7f7f;
+  margin-right: 5px; 
+}
+
+.follow_button {
+  background-color: white;
+  color:#4AB3F4;
+  border: 1px solid #4AB3F4;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 90px;
+  margin: 10px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1200px){
+  .main_chunk {
+    display: grid;
+    grid-template-columns: 290px auto 0;
+  }
+
+  .right_content{
+    display: none;
+  }
+    span.nav_item_icon{display:inline-block}
+    span.nav_item_text{display:none}
+
+}
+
+@media (min-width:1200px) {
+  span.nav_item_icon{display:none}
+  span.nav_item_text{display:inline-block} 
+}
+
+
+
+/* TODO: Create CSS for your Twitter Mockup */
